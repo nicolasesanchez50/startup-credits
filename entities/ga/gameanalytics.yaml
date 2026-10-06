@@ -1,0 +1,82 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m48xhs1b1124zb9p12vnsbtp
+  slug: gameanalytics
+  slug_aliases: []
+  name: GameAnalytics
+  domains:
+    - value: gameanalytics.com
+      role: primary
+      valid_from: 2026-10-06T15:33:10.000Z
+  category: data-analytics
+profile:
+  summary: GameAnalytics provides product analytics, data pipelines, ad and creative intelligence, and market intelligence for game studios across mobile, Roblox, VR/AR, and PC platforms.
+  description: GameAnalytics provides analytics, data pipeline, ad intelligence, and market intelligence tools for game studios.
+  links:
+    site: https://www.gameanalytics.com
+sources:
+  - source_id: src_8d289441a846b66935c7b8c0227c8b0bd064922715eb2d5bd815a60835c89f7e
+    url: https://www.gameanalytics.com/pricing/startup
+programs:
+  - program_id: prg_01m48xhs1gtez7qynegvz98s8b
+    program_slug: startup-program
+    program_slug_aliases: []
+    title: GameAnalytics Startup Program
+    summary: The GameAnalytics startup program gives studios backed by GameAnalytics partner VCs free and discounted access to its analytics and market intelligence products.
+    source_ids:
+      - src_8d289441a846b66935c7b8c0227c8b0bd064922715eb2d5bd815a60835c89f7e
+offers:
+  - offer_id: off_01m48xhs1ghvs67vh77s1jkn04
+    program_id: prg_01m48xhs1gtez7qynegvz98s8b
+    offer_slug: startup-pipelineiq-marketiq-discounts
+    offer_slug_aliases: []
+    title: Free and discounted PipelineIQ Pro and MarketIQ Pro for VC-backed studios
+    summary: Approved studios backed by a GameAnalytics partner VC get PipelineIQ Pro free for 3 months, then 50% off for 12 months, plus 50% off an annual MarketIQ Pro subscription.
+    lifecycle:
+      status: active
+      effective_from: 2026-10-06T15:33:10.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: PipelineIQ Pro is free for the first 3 months for approved studios.
+          kind: free-service
+          service: PipelineIQ Pro
+          duration:
+            kind: exact
+            value: P3M
+        - benefit_id: ben_02
+          description: 50% off the PipelineIQ Pro base price for the following 12 months, with usage above 2 million MAU billed at $1 per 1,000 MAU.
+          kind: discount
+          duration:
+            kind: exact
+            value: P12M
+          percentage:
+            kind: exact
+            basis_points: 5000
+        - benefit_id: ben_03
+          description: 50% off an annual MarketIQ Pro subscription, including 10 seats for Ad Insights and Store Intelligence.
+          kind: discount
+          duration:
+            kind: exact
+            value: P12M
+          percentage:
+            kind: exact
+            basis_points: 5000
+      consideration:
+        kind: variable
+        description: Applying and joining cost nothing; after the free period the studio pays the discounted PipelineIQ Pro base price and any usage above 2 million MAU at $1 per 1,000 MAU.
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: vendor-discretion
+        statement: Applicants must be backed by one of the GameAnalytics partner VCs, be pre-Series B in funding, and have the GameAnalytics SDK integrated; GameAnalytics reviews the application and issues a discount code on approval.
+    roles:
+      terms_authority_entity_id: ent_01m48xhs1b1124zb9p12vnsbtp
+      access_operator_entity_id: ent_01m48xhs1b1124zb9p12vnsbtp
+    access:
+      availability: public
+      method: form
+      url: https://www.gameanalytics.com/pricing/startup
+    source_ids:
+      - src_8d289441a846b66935c7b8c0227c8b0bd064922715eb2d5bd815a60835c89f7e
