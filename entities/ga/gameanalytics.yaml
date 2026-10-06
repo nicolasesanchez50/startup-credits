@@ -17,6 +17,8 @@ profile:
 sources:
   - source_id: src_8d289441a846b66935c7b8c0227c8b0bd064922715eb2d5bd815a60835c89f7e
     url: https://www.gameanalytics.com/pricing/startup
+  - source_id: src_61a22b960ea42de4ba717ddd8566bc12e9e71522efe4ba3716e324a9e0eadfef
+    url: https://www.gameanalytics.com/pricing
 programs:
   - program_id: prg_01m48xhs1gtez7qynegvz98s8b
     program_slug: startup-program
@@ -83,3 +85,4 @@ offers:
       instructions: Use Apply now on the GameAnalytics startup program page to open the short form; approved studios receive a welcome pack and a discount code, or an existing VC-shared code can be redeemed at checkout.
     source_ids:
       - src_8d289441a846b66935c7b8c0227c8b0bd064922715eb2d5bd815a60835c89f7e
+      - src_61a22b960ea42de4ba717ddd8566bc12e9e71522efe4ba3716e324a9e0eadfef
