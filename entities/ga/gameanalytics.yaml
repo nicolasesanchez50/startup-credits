@@ -45,8 +45,9 @@ offers:
             kind: exact
             value: P3M
         - benefit_id: ben_02
-          description: After the 3 free months, keep 50% off the PipelineIQ Pro base price and pay $1 per 1,000 MAU above 2 million for a full 12 months.
+          description: 50% off the PipelineIQ Pro base price for the following 12 months, with usage above 2 million MAU billed at $1 per 1,000 MAU.
           kind: discount
+          applies_to: PipelineIQ Pro
           duration:
             kind: exact
             value: P12M
@@ -56,9 +57,10 @@ offers:
         - benefit_id: ben_03
           description: Save 50% on an annual MarketIQ Pro subscription; includes 10 seats for Ad Insights, the ad and creative intelligence platform, and Store Intelligence.
           kind: discount
+          applies_to: MarketIQ Pro
           duration:
             kind: exact
-            value: P12M
+            value: P1Y
           percentage:
             kind: exact
             basis_points: 5000
