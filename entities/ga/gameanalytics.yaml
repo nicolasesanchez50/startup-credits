@@ -45,7 +45,7 @@ offers:
             kind: exact
             value: P3M
         - benefit_id: ben_02
-          description: 50% off the PipelineIQ Pro base price for the following 12 months, with usage above 2 million MAU billed at $1 per 1,000 MAU.
+          description: After the 3 free months, keep 50% off the PipelineIQ Pro base price and pay $1 per 1,000 MAU above 2 million for a full 12 months.
           kind: discount
           duration:
             kind: exact
@@ -54,7 +54,7 @@ offers:
             kind: exact
             basis_points: 5000
         - benefit_id: ben_03
-          description: 50% off an annual MarketIQ Pro subscription, including 10 seats for Ad Insights and Store Intelligence.
+          description: Save 50% on an annual MarketIQ Pro subscription; includes 10 seats for Ad Insights, the ad and creative intelligence platform, and Store Intelligence.
           kind: discount
           duration:
             kind: exact
@@ -64,13 +64,13 @@ offers:
             basis_points: 5000
       consideration:
         kind: variable
-        description: Applying and joining cost nothing; after the free period the studio pays the discounted PipelineIQ Pro base price and any usage above 2 million MAU at $1 per 1,000 MAU.
+        description: After the 3 free months the studio pays the discounted PipelineIQ Pro base price plus $1 per 1,000 MAU above 2 million; the MarketIQ Pro discount applies to an annual subscription.
     eligibility:
       rule:
         criterion_id: cri_01
         kind: manual
         reason: vendor-discretion
-        statement: Applicants must be backed by one of the GameAnalytics partner VCs, be pre-Series B in funding, and have the GameAnalytics SDK integrated; GameAnalytics reviews the application and issues a discount code on approval.
+        statement: To qualify the studio must be backed by one of GameAnalytics's partner VCs, be pre-series B in funding, and be signed up to GameAnalytics with the SDK integrated.
     roles:
       terms_authority_entity_id: ent_01m48xhs1b1124zb9p12vnsbtp
       access_operator_entity_id: ent_01m48xhs1b1124zb9p12vnsbtp
@@ -78,5 +78,6 @@ offers:
       availability: public
       method: form
       url: https://www.gameanalytics.com/pricing/startup
+      instructions: Use Apply now on the GameAnalytics startup program page to open the short form; approved studios receive a welcome pack and a discount code, or an existing VC-shared code can be redeemed at checkout.
     source_ids:
       - src_8d289441a846b66935c7b8c0227c8b0bd064922715eb2d5bd815a60835c89f7e
